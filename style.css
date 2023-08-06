@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/puntitos.png);
+
+}
+
+.titles {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 18.75px;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  padding: 29px 20px;
+}
+
+header>.logo {
+  object-fit: contain;
+}
+
+nav>.burger-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+nav .burger-nav>span {
+  width: 36px;
+  height: 6px;
+  background-color: black;
+}
+
+nav>ul {
+  display: none;
+}
+
+/* HERO */
+
+main .hero {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.hero h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* PRESENTACION */
+
+main .presentacion {
+  padding: 32px;
+  padding-bottom: 68px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px
+}
+.presentacion div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentacion .titles,
+.presentacion p {
+  color: white
+}
+
+/* SERVICES */
+
+main .services {
+  padding: 0 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+}
+.services div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+}
+
+.services article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #2C2C2C;
+  gap: 15px;
+}
+
+.services article h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.services article p {
+  font-weight: 400;
+}
+
+/* CONTACT-ME */
+
+main .contact-me {
+  background-color: #141414;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-me .titles {
+  text-align: center;
+}
+
+.contact-me form ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 27px;
+  padding: 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label input {
+  padding: 10px;
+}
+
+.send-button {
+  background-color: #FFD953;
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #DBDBDB;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  padding: 60px 19px;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.logo-footer img {
+  width: 77px;
+  object-fit: contain;
+}
+
+.more-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 29px
+}
+
+.more-contacts div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+@media (min-width: 769px) {
+  header {
+    padding: 26px 80px;
+  }
+  .logo {
+    width: 95px;
+  }
+  nav .burger-nav {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    list-style: none;
+  }
+  main .hero {
+    flex-direction: row;
+    padding: 0 80px;
+  }
+  .hero h1 {
+    width: 320px;
+    text-align: start;
+  }
+  .hero img {
+    margin-top: auto;
+    width: 435px;
+    height: 395px;
+  }
+  main .presentacion {
+    flex-direction: row-reverse;
+    padding: 145px 360px;
+    justify-content: center;
+    align-items: start;
+  }
+  .presentacion div {
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .presentacion div .titles {
+    margin: 0;
+  }
+  .presentacion img {
+    width: 211px;
+    height: 211px;
+  }
+  main .services {
+    background-color: #FAFAFA;
+    padding: 100px;
+  }
+  .services div {
+    flex-direction: row;
+  }
+
+  main .contact-me {
+    flex-direction: row;
+    justify-content: center;
+    gap: 77px;
+    padding: 118px 300px 0 300px;
+    min-height: 80vh;
+  }
+  .contact-me .titles {
+    font-size: 48px;
+  }
+  .contact-me form {
+    width: 100%;
+  }  
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+    padding: 80px;
+    background-image: url(images/puntitos.png);
+    background-color: #dbdbdb88;
+  }
+}
